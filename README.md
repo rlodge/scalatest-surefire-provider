@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/TheLadders/scalatest-surefire-provider.png?branch=master)](http://travis-ci.org/TheLadders/scalatest-surefire-provider)
+
 ## In short...
 This tool lets you use ScalaTest to execute JUnit/ScalaTest tests as part of a Maven build.
 
