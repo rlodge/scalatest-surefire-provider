@@ -5,3 +5,9 @@ scala:
 jdk:
   oraclejdk7
   openjdk7
+notifications:
+  irc: 
+    channels: 
+      - "irc.freenode.org#theladders"
+    on_success: change
+    on_failure: change
