@@ -1,12 +1,8 @@
 [![Build Status](https://secure.travis-ci.org/TheLadders/scalatest-surefire-provider.png?branch=master)](http://travis-ci.org/TheLadders/scalatest-surefire-provider)
 
-## In short...
-This tool lets you use ScalaTest to execute JUnit/ScalaTest tests as part of a Maven build.
+# ScalaTest Surefire Provider
 
-It is implemented as a Surefire provider for the popular Surefire test-running plugin for the Maven build system.
-
-## What is ScalaTest?
-[ScalaTest](http://http://www.scalatest.org/) is a testing framework for the JVM.
+Use ScalaTest with Surefire to execute JUnit/ScalaTest tests as part of a Maven build.
 
 ## What is a Surefire provider?
 The Maven build tool uses a plugin called "Surefire" for running tests.  On its own Surefire knows nothing about
