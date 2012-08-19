@@ -6,7 +6,7 @@ This tool lets you use ScalaTest to execute JUnit/ScalaTest tests as part of a M
 It is implemented as a Surefire provider for the popular Surefire test-running plugin for the Maven build system.
 
 ## What is ScalaTest?
-[ScalaTest](http://http://www.scalatest.org/) is an excellent testing framework for the JVM.
+[ScalaTest](http://http://www.scalatest.org/) is a testing framework for the JVM.
 
 ## What is a Surefire provider?
 The Maven build tool uses a plugin called "Surefire" for running tests.  On its own Surefire knows nothing about
@@ -65,8 +65,4 @@ The provider config will be something like this (make sure you use maven-surefir
 Most Maven projects that use Scala will want to use some other plugins too. If you're stuck try
 looking at the "scalatest-surefire-provider-tests" project.  That pom.xml uses the plugin.
 
-## About
-This project was created to help make ScalaTest part of our builds at [TheLadders](http://www.theladders.com).
-This was a good way to introduce Scala in low-risk ways with our test source.
-It's allowed us to learn at a gentle pace and prepared us for the production Scala we're writing now.
 
