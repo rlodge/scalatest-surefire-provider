@@ -3,23 +3,23 @@
 ## In short...
 This tool lets you use ScalaTest to execute JUnit/ScalaTest tests as part of a Maven build.
 
-It is implemented as a surefire provider for the popular surefire test running plugin for the Maven build system.
+It is implemented as a Surefire provider for the popular Surefire test-running plugin for the Maven build system.
 
 ## What is ScalaTest?
 [ScalaTest](http://http://www.scalatest.org/) is an excellent testing framework for the JVM.
 
-## What is a surefire provider?
-The Maven build tool uses a plugin called "surefire" for running tests.  On it's own surefire knows nothing about
-any one test framework.  It's job is to identify tests to be run and then report on the results.  Surefire relies
+## What is a Surefire provider?
+The Maven build tool uses a plugin called "Surefire" for running tests.  On its own Surefire knows nothing about
+any one test framework.  Its job is to identify tests to be run and then report on the results.  Surefire relies
 on "providers" to run the actual tests.  It ships with providers designed for running TestNG and JUnit tests.  Recently
-the folks working on surefire released a version allowing 3rd parties to implement their own providers.  This project is
+the folks working on Surefire released a version allowing 3rd parties to implement their own providers.  This project is
 a stab at creating a provider that uses ScalaTest as the test runner.
 
 Integrating ScalaTest with Maven this way is clean and gives you some low level control over test
 execution and the Maven build that would be hard if this was just a regular Maven plugin.
 
 This provider is designed to be a drop-in replacement.  This means you can configure it the same way
-(except for 1 or 2 key differences) as you configure the JUnit/TestNG providers.  The default settings
+as you configure the JUnit/TestNG providers, except for 1 or 2 key differences.  The default settings
 are probably sufficient for most people.
 
 ## What will this do for me?
@@ -28,16 +28,16 @@ are probably sufficient for most people.
   in Java or Scala.  So if you already have a Java project with JUnit tests you can use it to run your test suites.  Though
   that would be kind of pointless if you don't plan on then writing some ScalaTest tests.
 
-- Since you can mix your tests up this might be a good fit for teams looking for a clean migration path to a more modern TDD, BDD
+- Since you can mix your tests up this might be a good fit for teams looking for a clean migration path to a more modern TDD or BDD
   testing framework.
 
 - Your test output will read better than your existing Maven test output.
 
-- Gives you access in Maven to all the great stuff ScalaTest comes with (pretty output, a bunch of nice DSLs, the ability to write
-  more expressive and compact tests in the Scala programming language).
+- In Maven you'll have access to all the great stuff ScalaTest comes with: pretty output, a bunch of nice DSLs, the ability to write
+  more expressive and compact tests in the Scala programming language.
 
 ## Quickstart
-You need to add scalatest-surefire-provider as both a dependency and as a provider to the surefire plugin (2 places).
+You need to add scalatest-surefire-provider as both a dependency and as a provider to the Surefire plugin (2 places).
 
 The dependency will be something like this:
 
