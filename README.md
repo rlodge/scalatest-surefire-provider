@@ -18,20 +18,6 @@ This provider is designed to be a drop-in replacement.  This means you can confi
 as you configure the JUnit/TestNG providers, except for 1 or 2 key differences.  The default settings
 are probably sufficient for most people.
 
-## What will this do for me?
-
-- You can run tests for a Maven project containing any number of JUnit/ScalaTest tests.  Tests can be written
-  in Java or Scala.  So if you already have a Java project with JUnit tests you can use it to run your test suites.  Though
-  that would be kind of pointless if you don't plan on then writing some ScalaTest tests.
-
-- Since you can mix your tests up this might be a good fit for teams looking for a clean migration path to a more modern TDD or BDD
-  testing framework.
-
-- Your test output will read better than your existing Maven test output.
-
-- In Maven you'll have access to all the great stuff ScalaTest comes with: pretty output, a bunch of nice DSLs, the ability to write
-  more expressive and compact tests in the Scala programming language.
-
 ## Quickstart
 You need to add scalatest-surefire-provider as both a dependency and as a provider to the Surefire plugin (2 places).
 
